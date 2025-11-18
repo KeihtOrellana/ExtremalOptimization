@@ -5,7 +5,7 @@ from EO1 import extremal_optimization,load_single_knapsack_problem, obtener_vect
 
 
 
-ruta = "archivos\large.txt"  
+ruta = "archivos\large2.txt"  
 problema = load_single_knapsack_problem(ruta)
 
 n_items, capacidad, valores, pesos = obtener_vectores(problema)
@@ -18,8 +18,8 @@ print(f"Items:     {n_items}")
 print(f"Capacidad: {capacidad}")
 print("====================================\n")
 
-tau = 1.2
-iter_max = 30000
+tau = 3
+iter_max = 20000
 print("Ejecutando EO...\n")
 best_sol, best_value = extremal_optimization(
     valores=valores,
