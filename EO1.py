@@ -155,7 +155,9 @@ def mutar_variable(sol, idx):
 
 
 
-def extremal_optimization(valores, pesos, capacidad, tau=2.0, max_iter=20000):
+def extremal_optimization(valores, pesos, capacidad, tau, max_iter,seed=None):
+    if seed is not None:
+        np.random.seed(seed)
     n = len(valores)
     sol = inicializar_solucion(n)
 
