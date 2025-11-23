@@ -14,13 +14,9 @@ Permite cargar instancias desde archivos `.txt` y ejecutar el algoritmo con dist
 ---
 
 ## 🔧 Instalación
-
-```bash
 pip install numpy pandas
 
-Ejecución básica
-
-Ejemplo usando la instancia large2.txt incluida en la carpeta archivos/:
+### Ejecución básica:
 python main1.py -f archivos/large2.txt -t 2.2 -i 20000 -s 15
 
 
